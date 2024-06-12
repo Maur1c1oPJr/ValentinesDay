@@ -3,15 +3,20 @@ onload = () =>{
 };
 
 $(function() {
-var duracao = 10000;
-var intervalo = 120;
+var duracao = 90000;
+var intervalo = 229;
 
 setInterval(function() {
-$('.slider>*:first-child').animate({'margin-top': '-100%'}, duracao, 'linear',
-function() {$(this).appendTo(this.parentElement).css('margin-top', '0%');}
-)
+        $('.slider>*:first-child').animate(
+                {'margin-top': '-280%'
+                }, duracao, 'linear',
+                function() {
+                $(this).appendTo(this.parentElement).css('margin-top', '0%');
+                }
+        )
 }, intervalo);
-})
+}
+)
 
 //      Notas de desenvolvimento.
 /* 
